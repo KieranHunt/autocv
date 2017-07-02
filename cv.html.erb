@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Randomly generated CV using Google's autocomplete suggestions">
+    <meta name="author" content="Kieran Hunt">
+
+    <title>Autocomplete CV</title>
+</head>
+
+<body>
+    <div id='idea-knicked'>
+        Idea knicked from: https://twitter.com/TechnicallyRon/status/880379075235336192
+    </div>
+    <h1>CV</h1>
+    <p>
+        <div id='name'><%= cv[:name] %></div>
+        <div id='address'><%= cv[:address] %></div>
+        <div id='phone'><%= cv[:phone] %></div>
+        <div id='email'><%= cv[:email] %></div>
+    </p>
+    <div id ='Personal Information' >
+        <h2>Personal Information</h2>
+        Date of birth: <%= cv[:date_of_birth] %> <br/>
+        Marital Status: <%= cv[:marital_status] %> <br/>
+        Nationality: <%= cv[:nationality] %> <br/>
+        Languages: <%= cv[:languages] %> <br/>
+        Sex: <%= cv[:sex] %> <br/>
+        <h2>Profile</h2>
+        <%= cv[:profile_1] %> <%= cv[:profile_2] %>
+        <h2>Core Competencies</h2>
+        <%= cv[:core_competencies] %>
+        <h2>Professional Experience</h2>
+        <%= cv[:professional_experience_1] %> <%= cv[:professional_experience_2] %>
+        <h2>Professional Qualifications</h2>
+        <%= cv[:professional_qualifications_1] %> <%= cv[:professional_qualifications_2] %>
+    </div>
+    <div>
+        <%= cv[:please_hire_1] %> <%= cv[:please_hire_2] %>
+    </div>
+    <div>
+        <%= cv[:thanks] %>
+    </div>
+</body>
+</html>
