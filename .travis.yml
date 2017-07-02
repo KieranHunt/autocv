@@ -1,7 +1,4 @@
 language: ruby
-rvm:
- - 2.3
- - jruby
- - rbx-2
+rvm: 2.3
 script:
   ./autocv.rb
