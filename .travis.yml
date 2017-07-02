@@ -19,4 +19,6 @@ deploy:
   region: eu-west-1
   acl: public_read
   local_dir: build
+after_deploy:
+    - aws configure set preview.cloudfront true
     - aws cloudfront create-invalidation --distribution-id E3UYYMCCOHV3W5 --paths "/*"
