@@ -30,7 +30,7 @@ QUERIES = {
 SEARCH_PREFIX = 'http://suggestqueries.google.com/complete/search?client=firefox&q='
 
 TEMPLATE_FILE = 'cv.html.erb'
-OUTPUT_FILE = 'build/cv.html'
+OUTPUT_FILE = 'build/index.html'
 
 def pick_suggestion(query, suggestions)
     loop do
