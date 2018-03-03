@@ -11,13 +11,13 @@
 
   <title>Autocomplete CV</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
   <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
-    <h1>CV</h1>
+    <h1 class="text-center">CV</h1>
     <p>
       <div id='name'><%= cv[:name] %></div>
       <div id='address'><%= cv[:address] %></div>
@@ -25,19 +25,19 @@
       <div id='email'><%= cv[:email] %></div>
     </p>
     <div id ='Personal Information' >
-      <h2>Personal Information</h2>
+      <h3>Personal Information</h3>
       Date of birth: <%= cv[:date_of_birth] %> <br/>
       Marital Status: <%= cv[:marital_status] %> <br/>
       Nationality: <%= cv[:nationality] %> <br/>
       Languages: <%= cv[:languages] %> <br/>
       Sex: <%= cv[:sex] %> <br/>
-      <h2>Profile</h2>
+      <h3>Profile</h3>
       <%= cv[:profile_1] %> <%= cv[:profile_2] %>
-      <h2>Core Competencies</h2>
+      <h3>Core Competencies</h3>
       <%= cv[:core_competencies] %>
-      <h2>Professional Experience</h2>
+      <h3>Professional Experience</h3>
       <%= cv[:professional_experience_1] %> <%= cv[:professional_experience_2] %>
-      <h2>Professional Qualifications</h2>
+      <h3>Professional Qualifications</h3>
       <%= cv[:professional_qualifications_1] %> <%= cv[:professional_qualifications_2] %>
     </div>
     <div>
