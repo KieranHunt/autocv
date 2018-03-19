@@ -4,7 +4,6 @@ rvm: 2.3
 script:
   ./autocv.rb
 before_deploy:
-  - rsync -avz static/ build/autocv
   - pip install --user awscli
   - export PATH=$PATH:$HOME/.local/bin
   - aws s3 rm s3://autocv/ --recursive --region eu-west-1
